@@ -1,0 +1,769 @@
+{
+  "searches": [
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "</h3>\n\n  <p>", 
+      "mode": "normal", 
+      "name": "Chapter start", 
+      "replace": "</h3>\n\n  <p class=\"fl1\">"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "</h6>\n\n  <p>", 
+      "mode": "normal", 
+      "name": "No indent", 
+      "replace": "</h6>\n\n  <p class=\"fl\">"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "</p>\n\n</body>", 
+      "mode": "normal", 
+      "name": "End Chapter", 
+      "replace": "</p>\n\n  <h6 style=\"page-break-after:always\"> </h6>\n\n</body>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "</p>\n\n  <p>[a-z]", 
+      "mode": "regex", 
+      "name": "Cut paragraph", 
+      "replace": " [a-z]"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "h1", 
+      "mode": "regex", 
+      "name": "h1 > h3", 
+      "replace": "h3"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "em>", 
+      "mode": "normal", 
+      "name": "em > i", 
+      "replace": "i>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "strong>", 
+      "mode": "normal", 
+      "name": "strong > b", 
+      "replace": "b>"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "</span>", 
+      "mode": "regex", 
+      "name": "</span>", 
+      "replace": "</b></i></u></big></small></sub></sup></s></font></a></tt></span>"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<span class=\"italic\">", 
+      "mode": "regex", 
+      "name": "span italic", 
+      "replace": "<i>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "span class=\"italic\\d\"", 
+      "mode": "regex", 
+      "name": "span italic\\d", 
+      "replace": "i"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<span class=\"bold\">", 
+      "mode": "regex", 
+      "name": "span bold", 
+      "replace": "<b>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "span class=\"bold\\d\"", 
+      "mode": "regex", 
+      "name": "span bold\\d", 
+      "replace": "b"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<span class=\"underline\">", 
+      "mode": "regex", 
+      "name": "span underline", 
+      "replace": "<u>"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<span class=\"small\">", 
+      "mode": "regex", 
+      "name": "span small", 
+      "replace": "<small>"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "span class=\"smallCaps\"", 
+      "mode": "regex", 
+      "name": "span smallcaps", 
+      "replace": "small"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<span class=\"big\">", 
+      "mode": "regex", 
+      "name": "span big", 
+      "replace": "<big>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "<span>", 
+      "mode": "regex", 
+      "name": "<span>", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " </h", 
+      "mode": "regex", 
+      "name": "Extra title end space", 
+      "replace": "</h"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "<p> ", 
+      "mode": "regex", 
+      "name": "Extra para start space", 
+      "replace": "<p>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " </p>", 
+      "mode": "regex", 
+      "name": "Extra para end space", 
+      "replace": "</p>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " </div", 
+      "mode": "regex", 
+      "name": "Extra div end space", 
+      "replace": "</div"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "  ", 
+      "mode": "regex", 
+      "name": "Double space", 
+      "replace": " "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "\n", 
+      "mode": "regex", 
+      "name": "Return", 
+      "replace": " "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "<a></a>", 
+      "mode": "regex", 
+      "name": "<a>", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "\n\n  </div>", 
+      "mode": "regex", 
+      "name": "Blockquote", 
+      "replace": "\n\n  </div></blockquote>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "</div>\n\n  ", 
+      "mode": "regex", 
+      "name": "div > blockquote", 
+      "replace": "</div></blockquote>\n\n  "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "1st", 
+      "mode": "regex", 
+      "name": "1st", 
+      "replace": "1<sup>st</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "2nd", 
+      "mode": "regex", 
+      "name": "2nd", 
+      "replace": "2<sup>nd</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "3rd", 
+      "mode": "regex", 
+      "name": "3rd", 
+      "replace": "3<sup>rd</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "4th", 
+      "mode": "regex", 
+      "name": "4th", 
+      "replace": "4<sup>th</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "5th", 
+      "mode": "regex", 
+      "name": "5th", 
+      "replace": "5<sup>th</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "6th", 
+      "mode": "regex", 
+      "name": "6th", 
+      "replace": "6<sup>th</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "7th", 
+      "mode": "regex", 
+      "name": "7th", 
+      "replace": "7<sup>th</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "8th", 
+      "mode": "regex", 
+      "name": "8th", 
+      "replace": "8<sup>th</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "9th", 
+      "mode": "regex", 
+      "name": "9th", 
+      "replace": "9<sup>th</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "0th", 
+      "mode": "regex", 
+      "name": "0th", 
+      "replace": "0<sup>th</sup>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "\\. </p>", 
+      "mode": "regex", 
+      "name": "Space after dot", 
+      "replace": ".</p>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "\\. </p>", 
+      "mode": "regex", 
+      "name": ".</p>", 
+      "replace": ".</p>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "” </p>", 
+      "mode": "regex", 
+      "name": "”</p>", 
+      "replace": "”</p>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": ": </p>", 
+      "mode": "regex", 
+      "name": ":</p>", 
+      "replace": ":</p>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "
+ </p>\n\n  <p>", 
+      "mode": "regex", 
+      "name": "
+ </p>", 
+      "replace": "
+ "
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "\\.
+", 
+      "mode": "regex", 
+      "name": ".
+", 
+      "replace": "
+"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "
+\\.", 
+      "mode": "regex", 
+      "name": "
+.", 
+      "replace": "
+"
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": " 
+", 
+      "mode": "normal", 
+      "name": "
+", 
+      "replace": "
+"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "« ", 
+      "mode": "regex", 
+      "name": "«", 
+      "replace": "« "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " »", 
+      "mode": "regex", 
+      "name": "»", 
+      "replace": " »"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " !", 
+      "mode": "regex", 
+      "name": "!", 
+      "replace": " !"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " \\?", 
+      "mode": "regex", 
+      "name": "?", 
+      "replace": " ?"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " :", 
+      "mode": "regex", 
+      "name": "&#8239;:", 
+      "replace": "&#8239;:"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " ;", 
+      "mode": "regex", 
+      "name": "&#8239;;", 
+      "replace": "&#8239;;"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": ">— ", 
+      "mode": "regex", 
+      "name": ">—", 
+      "replace": ">— "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"page\\d\"", 
+      "mode": "regex", 
+      "name": "pagex", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"page\\w\\w\"", 
+      "mode": "regex", 
+      "name": "pagexx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"page\\d\\d\\d\"", 
+      "mode": "regex", 
+      "name": "pagexxx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"page\\w\\w\\w\\w\"", 
+      "mode": "regex", 
+      "name": "pagexxxx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " class=\"calibre\"", 
+      "mode": "regex", 
+      "name": "calibre", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " class=\"calibre\\d\"", 
+      "mode": "regex", 
+      "name": "calibrex", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " class=\"calibre\\d\\d\"", 
+      "mode": "regex", 
+      "name": "calibrexx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " class=\"calibre_\"", 
+      "mode": "regex", 
+      "name": "calibre_", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " class=\"calibre_\\d\"", 
+      "mode": "regex", 
+      "name": "calibre_x", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " class=\"calibre_\\d\\d\"", 
+      "mode": "regex", 
+      "name": "calibre_xx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "\\\n\\\n  <div>", 
+      "mode": "regex", 
+      "name": "<div>", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " </b>", 
+      "mode": "regex", 
+      "name": "</b>", 
+      "replace": "</b> "
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<body", 
+      "mode": "regex", 
+      "name": "Body cop", 
+      "replace": "<body class=\"cop\" id=\"copyright\""
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<body", 
+      "mode": "regex", 
+      "name": "Body cv", 
+      "replace": "<body class=\"cv\" id=\"cover\""
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<body", 
+      "mode": "regex", 
+      "name": "Body ded", 
+      "replace": "<body class=\"ded\" id=\"ded\""
+    }, 
+    {
+      "case_sensitive": false, 
+      "dot_all": false, 
+      "find": "<body", 
+      "mode": "regex", 
+      "name": "Body ob", 
+      "replace": "<body class=\"ob\" id=\"OtherBooks\""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "0001\\.css", 
+      "mode": "regex", 
+      "name": "azw3 eBookish", 
+      "replace": "eBookish.css"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "<br/>", 
+      "mode": "regex", 
+      "name": "<br/>", 
+      "replace": "\n  <br/>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"calibre_pb_\\d\"", 
+      "mode": "regex", 
+      "name": "id calibre_pb_x", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"calibre_pb_\\d\\d\"", 
+      "mode": "regex", 
+      "name": "id calibre_pb_xx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"calibre_pb_\\d\\d\\d\"", 
+      "mode": "regex", 
+      "name": "id calibre_pb_xxx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"heading_id_\\d\"", 
+      "mode": "regex", 
+      "name": "id_heading_x", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"heading_id_\\d\\d\"", 
+      "mode": "regex", 
+      "name": "id_ heading_xx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"calibre_toc_\\d\"", 
+      "mode": "regex", 
+      "name": "id toc_x", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " id=\"calibre_toc_\\d\\d\"", 
+      "mode": "regex", 
+      "name": "id toc_xx", 
+      "replace": ""
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " A\\.M\\. ", 
+      "mode": "regex", 
+      "name": "AM", 
+      "replace": " <small>A.M.</small> "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " P\\.M\\. ", 
+      "mode": "regex", 
+      "name": "PM", 
+      "replace": " <small>P.M.</small> "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "span id=\"page", 
+      "mode": "regex", 
+      "name": "span > a", 
+      "replace": "a id=\"page"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "<i> ", 
+      "mode": "regex", 
+      "name": "Space before <i>", 
+      "replace": " <i>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " </i>", 
+      "mode": "regex", 
+      "name": "</i>", 
+      "replace": "</i> "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "\\.</i>", 
+      "mode": "regex", 
+      "name": ".</i>", 
+      "replace": "</i>."
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": ", </i>", 
+      "mode": "regex", 
+      "name": ", </i>", 
+      "replace": "</i>, "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": ",</i>", 
+      "mode": "regex", 
+      "name": ",</i>", 
+      "replace": "</i>,"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "\\?</i>", 
+      "mode": "regex", 
+      "name": "?</i>", 
+      "replace": "</i>?"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "!</i>", 
+      "mode": "regex", 
+      "name": "!</i>", 
+      "replace": "</i>!"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "<i>“", 
+      "mode": "regex", 
+      "name": "<i>“", 
+      "replace": "“<i>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "”</i>", 
+      "mode": "regex", 
+      "name": "”</i>", 
+      "replace": "</i>”"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": ",</p>\\\n\\\n  <p>", 
+      "mode": "regex", 
+      "name": ",</p><p>", 
+      "replace": ", "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "</p>", 
+      "mode": "regex", 
+      "name": "End of part </p>", 
+      "replace": "</div></li></blockquote></h6></h5></h4></h3></h2></h1></ul></ol></p>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "</h\\d>", 
+      "mode": "regex", 
+      "name": "Change of title", 
+      "replace": "</div></li></blockquote></h6></h5></h4></h3></h2></h1></ul></ol>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": "</div>", 
+      "mode": "regex", 
+      "name": "All Div", 
+      "replace": "</div></li></blockquote></h6></h5></h4></h3></h2></h1></ul></ol></p>"
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": " A ", 
+      "mode": "regex", 
+      "name": "A À", 
+      "replace": " À "
+    }, 
+    {
+      "case_sensitive": true, 
+      "dot_all": false, 
+      "find": ">A ", 
+      "mode": "regex", 
+      "name": ">A >À", 
+      "replace": ">À "
+    }
+  ], 
+  "version": 1
+}

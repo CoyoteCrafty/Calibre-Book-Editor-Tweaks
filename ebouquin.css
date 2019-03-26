@@ -1,0 +1,203 @@
+/*eBouquin*/
+body {
+	display: block;
+	margin: 0 5pt;
+	line-height: 1.4;
+	text-align: justify;
+	text-indent: 0;
+	page-break-before: always;
+	/*eBouquin*/
+}
+/* --------------- core paragraph styles --------------*/
+p {
+	display: block;
+	margin: 0;
+	text-indent: 25px;
+	/*eBouquin*/
+}
+div {
+	display: block;
+	margin: 0;
+	text-indent: 0;
+	/*eBouquin*/
+}
+/* --------------- chapter start styles ---------------*/
+.fl:first-line {
+	font-variant: small-caps;
+	font-size: 105%;
+	/*eBouquin*/
+}
+.fl1:first-line {
+	font-variant: small-caps;
+	font-size: 115%;
+	/*eBouquin*/
+}
+font {
+	font-variant: small-caps;
+	font-size: larger;
+	/*eBouquin*/
+}
+/* ---------------- titles styles ---------------------*/
+h1, h2, h3, h4, h5, h6 {
+	line-height: inherit;
+	font-weight: normal;
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	/*eBouquin*/
+}
+h1 {
+	display: block;
+	margin: 45% 0 10%;
+	text-align: center;
+	line-height: 200%;
+	page-break-after: avoid;
+	/*eBouquin*/
+}
+h2 {
+	display: block;
+	margin: 10% 0;
+	text-align: center;
+	page-break-after: avoid;
+	/*eBouquin*/
+}
+h3 {
+	display: block;
+	margin: 250px 50px 50px;
+	text-align: center;
+	page-break-after: avoid;
+	/*eBouquin*/
+}
+h4 {
+	display: block;
+	margin: 2.5% 0 0;
+	page-break-after: avoid;
+	/*eBouquin*/
+}
+h5 {
+	display: block;
+	font-size: medium;
+	margin: 0;
+	page-break-after: avoid;
+	/*eBouquin*/
+}
+h6 {
+	display: block;
+	font-size: medium;
+	margin: 5% 0;
+	text-align: center;
+	page-break-after: avoid;
+	/*eBouquin*/
+}
+.right {
+	display: block;
+	margin: 0;
+	text-align: right;
+	/*eBouquin*/
+}
+.sign {
+	display: block;
+	margin: 5px 0 25px;
+	text-align: right;
+	/*eBouquin*/
+}
+/* ---------------- core font styles ------------------*/
+small {
+	font-size: smaller;
+	/*eBouquin*/
+}
+big {
+	font-size: larger;
+	/*eBouquin*/
+}
+.italic {
+	font-style: italic;
+	/*eBouquin*/
+}
+.bold {
+	font-weight: bold;
+	/*eBouquin*/
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 100% !important;
+	position: relative;
+	vertical-align: baseline;
+	/*eBouquin*/
+}
+sup {
+	top: -0.5em;
+    padding: 0 0 0 0.4%;
+	/*eBouquin*/
+}
+sub {
+	bottom: -0.25em;
+	padding: 0 0 0 0.4%;
+	/*eBouquin*/
+}
+a {
+	text-decoration: none;
+	color: #0B4085;
+	/*eBouquin*/
+}
+blockquote {
+	display: block;
+	margin: 25px;
+	/*eBouquin*/
+}
+img {
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: sub;
+	/* removes descender gap beneath images *//*eBouquin*/
+}
+/*----------------- list styles --------------------------------------*/
+ol {
+	display: block;
+	margin: 0 0 0 25px;
+	/*eBouquin*/
+}
+ul {
+	display: block;
+	font-style: normal;
+	list-style: none;
+	/* Remove list bullets */
+	margin: 0 0 0 -25px;
+	/*eBouquin*/
+}
+li {
+	margin: 0 0 0 -10px;
+	/*eBouquin*/
+}
+li:before {
+	content: "–";
+	/* Insert content that looks like dash */
+	padding-right: 8px;
+	/*eBouquin*/
+}
+/*--------------------------------------------------------------------*/
+a.hlink {
+	text-decoration: none;
+}
+.ded {
+	margin: 120px 50px 0;
+}
+.cop {
+	text-align: center;
+	font-size: x-small;
+	margin-top: 120px;
+}
+.ob {
+	text-align: center;
+	margin: 120px 50px 0;
+}
+.cv {
+	text-align: center;
+	margin: 0;
+}
+/*--------------------------------------------------------------------*/
+@page {
+	margin: 5pt 0;
+}
