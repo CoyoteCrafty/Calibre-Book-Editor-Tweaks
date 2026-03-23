@@ -1,198 +1,208 @@
-/*eBookish*/
-/* --------------- core body styles --------------------*/
+/*--- eBookish -- 2025.04.12 - No px ----------*/
+/*--- eBookish -- core body styles ------------*/
 body {
     display: block;
     margin: 0 5pt;
     line-height: 1.4;
+    font-family: "Bookerly", serif;
     text-align: justify;
     text-indent: 0;
+    widows: 5 !important;
+    orphans: 5 !important;
     page-break-before: always;
-    /*eBookish*/
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
 }
 .ded {
-    margin: 120px 50px 0;
-    /*eBookish*/
+    margin: 33% 5% 20%;
 }
 .cop {
     text-align: center;
-    font-size: x-small;
-    margin-top: 120px;
-    /*eBookish*/
+    font-size: 75%;
+    margin-top: 33%;
 }
 .ob {
     text-align: center;
-    margin: 120px 50px 0;
-    /*eBookish*/
+    margin: 33% 5% 20%;
 }
 .cv {
     text-align: center;
     margin: 0;
     vertical-align: middle;
-    /*eBookish*/
 }
-/* --------------- core paragraph styles ---------------*/
+/*--- eBookish -- core paragraph styles -------*/
 p {
     display: block;
-    margin: 0;
-    text-indent: 25px;
-    /*eBookish*/
+    margin: 0.25em 0;
+    word-break: normal;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-indent: 2em;
 }
-div {
-    display: block;
-    margin: 0;
+body+p {
     text-indent: 0;
-    /*eBookish*/
+    margin-top: 33%;
 }
-/* --------------- chapter start styles ----------------*/
+/*--- eBookish -- chapter start styles --------*/
 .fl {
     display: block;
     margin: 0;
     text-indent: 0;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    /*eBookish*/
+    page-break-inside: avoid !important;
+}
+.fl:first-letter {
+    display: inline;
+    color: #aaa;
+    text-shadow: 0.05em 0.05em 0 #000, -0.025em -0.025em 0 #000, 0.025em -0.025em 0 #000, -0.025em 0.025em 0 #000, 0.025em 0.025em 0 #000;
+    font-weight: bolder;
+    font-size: 400%;
+    font-weight: bolder;
+    line-height: 1.55;
+    height: 1.3em;
+    float: left;
+    margin: -0.3em 0 -0.3em 0;
+    padding: 0.06em 0.1em 0 0;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
 }
 .fl:first-line {
     font-variant: small-caps;
-    font-size: 110%;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    /*eBookish*/
+    font-size: 130%;
+    letter-spacing: 0.05em;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
 }
-.fl:first-letter {
-    color: #eee;
-    text-shadow: 2px 2px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
-    font-size: 220%;
-    float: left;
-    line-height: 100%;
-    padding: 5px 7px 0 0;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    /*eBookish*/
-}
-.fl1 {
-    display: block;
-    margin: 25px 0 0;
-    text-indent: 0;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    /*eBookish*/
-}
-.fl1:first-line {
-    font-variant: small-caps;
-    font-size: 120%;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    /*eBookish*/
-}
-.fl1:first-letter {
-    color: #eee;
-    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-weight: bold;
-    font-size: 250%;
-    float: left;
-    line-height: 100%;
-    padding: 0 7px 0 0;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    /*eBookish*/
-}
-font {
-    font-variant: small-caps;
-    /*eBookish*/
-}
-/* ---------------- titles styles --------------------*/
+/*--- eBookish -- titles styles ----------------*/
 h1, h2, h3, h4, h5, h6 {
     line-height: inherit;
     font-weight: normal;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    /*eBookish*/
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
 }
 h1 {
     display: block;
-    margin: 45% 0 10%;
+    font-size: 2.5em;
+    margin: 10% 0;
     text-align: center;
-    line-height: 200%;
-    page-break-after: avoid;
-    /*eBookish*/
+    page-break-after: avoid !important;
 }
-h1 + p, *[class^="Head-Level-1"] + p {
+body h1 {
+    font-size: 250%;
+    margin-top: 40%;
+}
+h1+p, *[class^="Head-Level-1"]+p {
     text-indent: 0;
-    /*eBookish*/
+}
+h1+h1 {
+    margin: 0;
+}
+h1+h2 {
+    margin-top: 10%;
 }
 h2 {
     display: block;
-    margin: 10% 0;
+    font-size: 2em;
+    margin: 10% 0 15%;
     text-align: center;
-    page-break-after: avoid;
-    /*eBookish*/
 }
-h2 + p, *[class^="Head-Level-2"] + p {
+body+h2 {
+    margin-top: 35%;
+}
+h2+p, *[class^="Head-Level-2"]+p {
     text-indent: 0;
-    /*eBookish*/
+}
+p+h2 {
+    margin: 1em 0;
 }
 h3 {
     display: block;
-    font-size: 175%;
-    margin: 15% 0 10%;
+    margin: 33% 0 10%;
+    font-size: 2em;
     text-align: center;
-    page-break-after: avoid;
-    /*eBookish*/
 }
-h3 + p, *[class^="Head-Level-3"] + p {
+h3+p, *[class^="Head-Level-3"]+p {
     text-indent: 0;
-    /*eBookish*/
+}
+body+h3 {
+    margin-bottom: 5%;
+    font-size: 2.5em;
+}
+h2+h3 {
+    margin: 0;
+}
+h3+h3 {
+    margin: 0;
+}
+p+h3 {
+    margin: 1em 0;
 }
 h4 {
     display: block;
-    margin: 2.5% 0 0;
-    page-break-after: avoid;
-    /*eBookish*/
+    margin: 5% 0 0.5%;
+    widows: 3;
+    orphans: 3;
+    page-break-after: avoid !important;
+}
+h4+h4 {
+    margin: 1em 0;
 }
 h5 {
     display: block;
     font-size: medium;
     margin: 0;
-    page-break-after: avoid;
-    /*eBookish*/
 }
 h6 {
     display: block;
     font-size: medium;
-    margin: 5% 0;
+    margin: 1em 0;
     text-align: center;
-    page-break-after: avoid;
-    /*eBookish*/
 }
-/*----------------- right styles ------------------------*/
+/*--- eBookish -- align styles -----------------*/
 .right {
     display: block;
     text-align: right;
-    /*eBookish*/
 }
 .sign {
     display: block;
-    margin: 5px 0 25px;
-    page-break-before: avoid;
+    margin: 0.75em inherit 1.5em;
+    page-break-before: avoid !important;
     text-align: right;
-    /*eBookish*/
 }
-/* ---------------- core font styles --------------------*/
+.left {
+    display: block;
+    text-align: left;
+}
+.just {
+    display: block;
+    text-align: justify;
+}
+.date {
+    display: block;
+    font-size: 1.1em;
+    margin: 1em 0 0.75em;
+    text-indent: 0;
+    page-break-after: avoid !important;
+}
+.def {
+    display: block;
+    margin: 1em 0;
+    text-indent: 0;
+}
+/*--- eBookish -- core font styles ------------*/
+font {
+    font-variant: small-caps;
+    font-size: larger;
+}
 small {
     font-size: smaller;
-    /*eBookish*/
 }
 big {
     font-size: larger;
-    /*eBookish*/
 }
 sub, sup {
     font-size: 75%;
@@ -200,33 +210,83 @@ sub, sup {
     position: relative;
     vertical-align: baseline;
     padding: 0 0 0 0.4%;
-    /*eBookish*/
 }
 sup {
     top: -0.5em;
-    padding: 0 0 0 0.4%;
-    /*eBookish*/
 }
 sub {
     bottom: -0.25em;
-    padding: 0 0 0 0.4%;
-    /*eBookish*/
 }
-a {
-    text-decoration: none;
-    color: #0B4085;
-    /*eBookish*/
+tt {
+    font-family: "Roboto Mono", monospace;
+    font-size: 105%;
 }
+.letter {
+    display: block;
+    margin: 1em 2em;
+    font-family: "Segoe Print", "Segoe Script", cursive;
+    font-style: italic;
+    line-height: 200%;
+    text-align: left;
+}
+.cursive {
+    font-family: "Segoe Script", "Segoe Print", cursive;
+    font-style: italic;
+}
+.sans {
+    font-family: "Trebuchet MS", sans-serif;
+}
+.space {
+    letter-spacing: 0.25em;
+}
+.shadow {
+    text-shadow: 0.05em 0.05em 0 #000, -0.025em -0.025em 0 #000, 0.025em -0.025em 0 #000, -0.025em 0.025em 0 #000, 0.025em 0.025em 0 #000;
+    font-weight: bolder;
+    letter-spacing: 0.05em;
+    color: #aaa;
+}
+.clr-shadow {
+    text-shadow: 0.05em 0.05em 0 #000, -0.025em -0.025em 0 #000, 0.025em -0.025em 0 #000, -0.025em 0.025em 0 #000, 0.025em 0.025em 0 #000;
+    font-weight: bolder;
+    letter-spacing: 0.05em;
+}
+/*--- eBookish -- blockquotes ----------------*/
 blockquote {
     display: block;
-    margin: 25px;
-    /*eBookish*/
+    margin: 2em;
 }
-blockquote + p {
-    text-indent: 0;
-    /*eBookish*/
+dl {
+    margin: 1em 2em;
 }
+q {
+    content: "“""”""‘""’";
+}
+q:before {
+    content: open-quote;
+    line-height: 0.1em;
+    margin: 0 0.25em;
+    vertical-align: 0;
+}
+q:after {
+    content: close-quote;
+    line-height: 0.1em;
+    margin: 0 0.25em;
+    vertical-align: 0;
+}
+.hang {
+    display: block;
+    text-indent: -2em;
+    margin-left: 2em;
+    page-break-before: avoid !important;
+}
+/*--- eBookish -- image ----------------------*/
 img {
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    padding: 0 0.2em;
+}
+img.middle {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -234,62 +294,37 @@ img {
     max-width: 100%;
     vertical-align: sub;
     /* removes descender gap beneath images */
-    padding: 0;
+    padding: 2.5% 0.2em;
     border: 0;
-    /*eBookish*/
 }
-.hang {
-    display: block;
-    page-break-before: avoid;
-    text-indent: -25px;
-    margin-left: 25px;
-    /*eBookish*/
-}
-/*----------------- line styles -------------------------*/
+/*--- eBookish -- line styles -----------------*/
 hr {
     border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    /*eBookish*/
+    height: 0.05em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    margin: 5% auto;
 }
-.sep {
-	width:10%;
+hr+p {
+    text-indent: 0;
 }
-/*----------------- list styles -------------------------*/
-ol {
-    display: block;
-    margin: 0 0 0 25px;
-    /*eBookish*/
+hr.sep {
+    width: 33%;
 }
-ol > li:before {
-    padding-right: 8px;
-    /*eBookish*/
+/*--- eBookish -- list styles -----------------*/
+ol, ul {
+    list-style-position: outside;
 }
-ul {
-    display: block;
-    font-style: normal;
-    list-style-type: none;
-    /* Remove list bullets */
-    margin: 0 0 5px -20px;
-    /*eBookish*/
-}
-li {
-    margin: 0 0 0 -10px;
-    /*eBookish*/
-}
-ul > li:before {
-    content: '\2014';
-    /* Insert content that looks like dash */
-    padding-right: 8px;
-    /*eBookish*/
-}
-/*----------------- link styles -------------------------*/
+/*--- eBookish -- link styles -----------------*/
 a {
     text-decoration: none;
-    /*eBookish*/
 }
-/*----------------- page styles -------------------------*/
+a.under {
+    text-underline-position: under;
+    text-decoration: underline dotted #0080ff;
+    color: inherit;
+}
+/*--- eBookish -- page styles -----------------*/
 @page {
     margin: 5pt 0;
 }
-/*-------------------------------------------------------*/
+/*--- eBookish -- end ------------------------*/
